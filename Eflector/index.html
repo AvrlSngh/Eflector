@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eflector | Emotion Reflector</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+
+<script src="main.js"></script>
+<header id="header">
+<h1 style="margin: 0; display: inline-block;">EFLECTOR</h1>
+<a href="https://avrlsngh.blogspot.in/2018/04/working-of-eflector.html#more" target="_blank"><h2 style="display: inline-block; margin:0; text-decoration: none; color: chocolate; margin-top: 7px;">BLOG</h2></a>
+</header>
+<section id="section1">
+<div>
+<h3 style="margin-bottom: 25%;">
+Enter the URL to an image that includes a face, then click the <b style="color: grey">Analyze face</b> button.</h3>
+
+<br><br> <div id="imageURL"><input type="text" name="inputImage" id="inputImage" value="https://img.etimg.com/thumb/msid-46500844,width-300,imgsize-80056,resizemode-4/emami-ropes-in-hrithik-roshan-for-fair-and-handsome-brand.jpg"><br><br>
+<button onclick="processImage();timeOut();" id="imgButton">Analyze face</button>
+</div>
+</div>
+<div id="wrapper" style="width:1020px; display:table;">
+    <div id="jsonOutput" style="width:600px; display:table-cell;display:none;">
+        Response:
+        <br><br>
+        <textarea id="responseTextArea" class="UIInput" style="width:580px; height:400px;"></textarea>
+    </div>
+    <div id="imageDiv">
+        <img id="sourceImage" width="300" height="300" style="margin: 0; padding: 0;">
+    </div>
+   </div>
+</section>
+<section id="result">
+<div class="detail_emotion" style="padding:20px;text-align:center;display: flex;justify-content: center;flex-flow: column;align-items: center;">
+<h1>Emotion Expressed</h1>
+
+<img src="img/wait.png" id="emoji" height="100" width="100">
+</div>
+</section>
+</body>
+</html>
+
